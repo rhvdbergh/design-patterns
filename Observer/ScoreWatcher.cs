@@ -12,7 +12,7 @@ public class ScoreWatcher : IObserver
         player.Register(this);
     }
 
-    public void update()
+    public void Update()
     {
         var latestScore = _player.GetScore();
         Console.WriteLine($"ScoreWatcher: The score is now {latestScore}");

@@ -12,7 +12,7 @@ public class RatingsWatcher : IObserver
         player.Register(this);
     }
 
-    public void update()
+    public void Update()
     {
         var latestRating = _player.GetRating();
         Console.WriteLine($"RatingsWatcher: The rating is now {latestRating}");

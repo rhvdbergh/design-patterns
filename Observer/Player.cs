@@ -35,7 +35,7 @@ public class Player : IObservedSubject
 
         foreach (var observer in Observers)
         {
-            observer.update();
+            observer.Update();
         }
     }
 }
